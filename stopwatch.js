@@ -10,6 +10,12 @@ class StopWatch{
 
     // When the user clicks on the Start button this function will be called. This will start the StopWatch.
     start(){
+        if(this.watchAlreadyStarted){
+            return;
+        }else{
+            this.watchAlreadyStarted = true;
+        }
+
         const watchInterval = setInterval(this.tick,1000);
         this.watchInterval = watchInterval;
     }
@@ -46,6 +52,7 @@ class StopWatch{
     // This function will be called when user clicks on the stop button. This will stop the StopWatch as the interval will be cleared in this function.
     stop(){
         clearInterval(this.watchInterval);
+        this.watchAlreadyStarted = false;
     }
 
     // This function will be called when the user clicks on the reset button. 
@@ -53,6 +60,7 @@ class StopWatch{
     reset(){
         if(this.watchInterval){
             clearInterval(this.watchInterval);
+            this.watchAlreadyStarted = false;
         }
 
         this.hour.innerText = '00';
