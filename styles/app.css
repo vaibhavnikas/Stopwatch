@@ -1,0 +1,163 @@
+/* Styling for body */
+body{
+    background: linear-gradient(90deg,#7b4397,#dc2430);
+}
+
+/* Styling for container */
+#container{
+    margin: auto;
+    margin-top: 22vh;
+    height: 48vh;
+    width: 45vw;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -1px -1px 8px 0px white;
+}
+
+/* Styling for timer */
+#timer{
+    margin: auto;
+    margin-top: 10vh;
+    color: white;
+    text-align: center;
+    font-size: 6rem;
+}
+
+/* Styling for div which contains all the buttons */
+#all-buttons{
+    margin: auto;
+    margin-bottom: 12vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 35vw;
+}
+
+/* Styling for buttons */
+button{
+    height: 2.5vw;
+    width: 10vw;
+    border-radius: 30px;
+    color: white;
+    font-size: 1.5rem;
+    border: hidden;
+}
+
+/* Styling for buttons when hovered over them*/
+button:hover{
+    box-shadow: 0px 0px 6px 3px white;
+    transition: all 0.8s;
+}
+
+/* Styling for Start button */
+#start{
+    background-color: coral;
+}
+
+/* Styling for Stop button */
+#stop{
+    background-color: #73ba9b;
+}
+
+/* Styling for reset button */
+#reset{
+    background-color: #004df3;
+}
+
+/* Media queries for styling on different screen sizes */
+@media(max-width:1600px){
+    #container{
+        width: 50vw;
+    }
+
+    #all-buttons{
+        width: 40vw;
+    }
+
+    button{
+        width: 12vw;
+        height: 3vw;
+    }
+}
+
+@media(max-width:1200px){
+    #container{
+        width: 60vw;
+    }
+
+    #timer{
+        font-size: 5rem;
+    }
+
+    #all-buttons{
+        width: 50vw;
+    }
+
+    button{
+        width: 14vw;
+        height: 4vw;
+    }
+}
+
+@media(max-width:900px){
+    #container{
+        width: 70vw;
+    }
+
+    #timer{
+        font-size: 4rem;
+    }
+
+    #all-buttons{
+        width: 60vw;
+    }
+
+    button{
+        width: 16vw;
+        height: 5vw;
+    }
+}
+
+@media(max-width:700px){
+    #container{
+        width: 80vw;
+        height: 70vh;
+    }
+
+    #timer{
+        font-size: 4rem;
+    }
+
+    #all-buttons{
+        margin-top: 10vh;
+        height: 30vh;
+        width: 60vw;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    button{
+        width: 60vw;
+        height: 6vw;
+    }
+}
+
+@media(max-width:600px){
+    #container{
+        width: 85vw;
+        height: 60vh;
+    }
+
+    #timer{
+        font-size: 3rem;
+    }
+
+    button{
+        width: 50vw;
+        height: 5vh;
+    }
+}
+
